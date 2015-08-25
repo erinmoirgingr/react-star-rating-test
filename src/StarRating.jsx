@@ -99,7 +99,7 @@ class StarRating extends React.Component {
     if (val >= max) {
       return 100;
     }
-    return (val - min) * 100 / (max - min);
+    return (min / max) * 100;
   }
 
   getValueFromPosition(pos) {
