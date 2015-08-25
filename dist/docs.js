@@ -20035,7 +20035,7 @@ var StarRating = (function (_React$Component) {
       if (val >= max) {
         return 100;
       }
-      return min / max * 100;
+      return val / (max - min) * 100;
     }
   }, {
     key: 'getValueFromPosition',
