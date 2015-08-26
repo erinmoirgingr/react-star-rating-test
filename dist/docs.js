@@ -19988,6 +19988,7 @@ var StarRating = (function (_React$Component) {
         this.state.editing = this.props.editing || false;
         var ratingVal = this.props.rating;
         this.state.ratingCache.pos = this.getStarRatingPosition(ratingVal);
+        this.state.ratingCache.rating = ratingVal;
 
         this.setState({
           ratingCache: this.state.ratingCache,
