@@ -27,6 +27,10 @@ var _classnames = require('classnames');
 
 var _classnames2 = _interopRequireDefault(_classnames);
 
+var _propTypes = require("prop-types");
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
 /**
  * @fileoverview react-star-rating
  * @author @cameronjroe
@@ -308,14 +312,14 @@ var StarRating = (function (_React$Component) {
 })(_react2['default'].Component);
 
 StarRating.propTypes = {
-  name: _react2['default'].PropTypes.string.isRequired,
-  caption: _react2['default'].PropTypes.string,
-  ratingAmount: _react2['default'].PropTypes.number.isRequired,
-  rating: _react2['default'].PropTypes.number,
-  onRatingClick: _react2['default'].PropTypes.func,
-  disabled: _react2['default'].PropTypes.bool,
-  editing: _react2['default'].PropTypes.bool,
-  size: _react2['default'].PropTypes.string
+  name: _propTypes2['default'].string.isRequired,
+  caption: _propTypes2['default'].string,
+  ratingAmount: _propTypes2['default'].number.isRequired,
+  rating: _propTypes2['default'].number,
+  onRatingClick: _propTypes2['default'].func,
+  disabled: _propTypes2['default'].bool,
+  editing: _propTypes2['default'].bool,
+  size: _propTypes2['default'].string
 };
 
 StarRating.defaultProps = {
